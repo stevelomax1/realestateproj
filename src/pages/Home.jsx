@@ -1,8 +1,15 @@
+import { useState } from "react";
 import PropertyCard from "../components/PropertyCard";
 import SectionHeading from "../components/SectionHeading";
 import properties from "../data/properties";
 
 function Home() {
+    const [search, setSearch] = useState("");
+
+const filteredProperties = properties.filter((property) =>
+  property.title.toLowerCase().includes(search.toLowerCase()) ||
+  property.city.toLowerCase().includes(search.toLowerCase())
+);
   return (
     <>
       <section className="hero">
@@ -57,14 +64,29 @@ function Home() {
             subtitle="Take a look at some of our most popular homes."
           />
 
+          <input
+            className="search-box"
+            type="text"
+            placeholder="Search by city or property..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+
           <div className="property-grid">
 
-            {properties.map((property) => (
-              <PropertyCard
-                key={property.id}
-                property={property}
-              />
-            ))}
+            {filteredProperties.length > 0 ? (
+              filteredProperties.map((property) => (
+                <PropertyCard
+                  key={property.id}
+                  property={property}
+                />
+              ))
+            ) : (
+              <div className="empty-state">
+                <h2>No properties found.</h2>
+                <p>Try searching another city.</p>
+              </div>
+            )}
 
           </div>
 

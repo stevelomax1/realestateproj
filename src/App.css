@@ -181,4 +181,31 @@
     right: 0;
     border-right-color: var(--border);
   }
+  .search-box{
+width:100%;
+padding:18px;
+font-size:1rem;
+margin-bottom:40px;
+border-radius:12px;
+border:1px solid #ddd;
+outline:none;
+}
+
+.search-box:focus{
+border-color:#23352d;
+box-shadow:0 0 0 3px rgba(35,53,45,.15);
+}
+.empty-state{
+text-align:center;
+padding:60px;
+background:white;
+border-radius:20px;
+}
+.details-image{
+width:100%;
+max-width:900px;
+display:block;
+margin:50px auto;
+border-radius:20px;
+}
 }
