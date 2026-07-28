@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import PropertyCard from "../components/PropertyCard";
 import SectionHeading from "../components/SectionHeading";
@@ -6,7 +7,11 @@ import properties from "../data/properties";
 function Home() {
     const [search, setSearch] = useState("");
 
-const filteredProperties = properties.filter((property) =>
+const featuredProperties = properties.filter(
+  (property) => property.featured
+);
+
+const filteredProperties = featuredProperties.filter((property) =>
   property.title.toLowerCase().includes(search.toLowerCase()) ||
   property.city.toLowerCase().includes(search.toLowerCase())
 );
@@ -32,15 +37,13 @@ const filteredProperties = properties.filter((property) =>
             </p>
 
             <div className="hero-buttons">
+              <Link className="button" to="/properties">
+                Browse Properties
+              </Link>
 
-              <button className="button">
-                Browse Listings
-              </button>
-
-              <button className="button secondary">
-                Contact Us
-              </button>
-
+              <Link className="button secondary" to="/contact">
+                Contact an Agent
+              </Link>
             </div>
 
           </div>
