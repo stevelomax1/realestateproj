@@ -922,4 +922,383 @@ form-success-message {
   font-size: 0.9rem;
   line-height: 1.55;
 }
+.services-section,
+.about-story-section,
+.values-section,
+.contact-section {
+  padding-block: 5rem;
+}
+
+.services-page-hero {
+  background:
+    linear-gradient(rgba(24, 36, 31, 0.84), rgba(24, 36, 31, 0.84)),
+    url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600")
+      center / cover;
+}
+
+.about-page-hero {
+  background:
+    linear-gradient(rgba(24, 36, 31, 0.84), rgba(24, 36, 31, 0.84)),
+    url("https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600")
+      center / cover;
+}
+
+.contact-page-hero {
+  background:
+    linear-gradient(rgba(24, 36, 31, 0.84), rgba(24, 36, 31, 0.84)),
+    url("https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=1600")
+      center / cover;
+}
+
+.services-introduction {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.services-introduction h2,
+.about-story-content h2,
+.contact-information h2,
+.contact-form-heading h2 {
+  margin: 0;
+  color: #23352d;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.services-introduction > p,
+.about-story-content > p,
+.contact-introduction {
+  margin: 0;
+  color: #68756e;
+  line-height: 1.85;
+}
+
+.services-grid,
+.values-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.service-card,
+.value-card {
+  padding: 1.75rem;
+  border: 1px solid rgba(31, 41, 51, 0.1);
+  border-radius: 1.25rem;
+  background: #ffffff;
+  box-shadow: 0 15px 40px rgba(31, 41, 51, 0.06);
+}
+
+.service-card h3,
+.value-card h3 {
+  margin: 1.25rem 0 0.75rem;
+  color: #23352d;
+  font-size: 1.25rem;
+}
+
+.service-card p,
+.value-card p {
+  margin: 0;
+  color: #68756e;
+  line-height: 1.75;
+}
+
+.service-icon,
+.value-icon,
+.contact-detail-icon {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  place-items: center;
+  border-radius: 50%;
+  background: #edf0ed;
+  color: #8d6947;
+}
+
+.service-process-section {
+  padding-block: 5rem;
+  background: #eef1ef;
+}
+
+.process-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.process-step {
+  padding: 2rem;
+  border-radius: 1.25rem;
+  background: #ffffff;
+}
+
+.process-step > span {
+  color: #8d6947;
+  font-size: 0.85rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+}
+
+.process-step h3 {
+  margin: 1rem 0 0.75rem;
+  color: #23352d;
+}
+
+.process-step p {
+  margin: 0;
+  color: #68756e;
+  line-height: 1.75;
+}
+
+.services-cta {
+  padding-block: 4rem;
+  background: #23352d;
+  color: #ffffff;
+}
+
+.services-cta-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.services-cta h2 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.services-cta p:not(.eyebrow) {
+  color: #d1d9d5;
+}
+
+.button-light {
+  align-self: flex-start;
+  background: #ffffff;
+  color: #23352d;
+}
+
+.button-light:hover {
+  background: #edf0ed;
+}
+
+.about-story-grid {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-image-wrapper {
+  position: relative;
+}
+
+.about-image-wrapper img {
+  width: 100%;
+  min-height: 420px;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+
+.about-experience-card {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  display: flex;
+  max-width: 190px;
+  flex-direction: column;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background: #23352d;
+  color: #ffffff;
+}
+
+.about-experience-card strong {
+  font-size: 2rem;
+}
+
+.about-experience-card span {
+  color: #d1d9d5;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.about-story-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.values-section {
+  background: #eef1ef;
+}
+
+.about-statistics-section {
+  padding-block: 4rem;
+  background: #23352d;
+  color: #ffffff;
+}
+
+.about-statistics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.about-statistics-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.about-statistics-grid strong {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+.about-statistics-grid span {
+  color: #cbd4cf;
+}
+
+.contact-layout {
+  display: grid;
+  gap: 3rem;
+}
+
+.contact-information {
+  align-self: start;
+}
+
+.contact-details-list {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contact-detail h3 {
+  margin: 0 0 0.35rem;
+  color: #23352d;
+  font-size: 1rem;
+}
+
+.contact-detail p,
+.contact-detail a {
+  margin: 0;
+  color: #68756e;
+  line-height: 1.6;
+}
+
+.contact-detail a:hover {
+  color: #23352d;
+  text-decoration: underline;
+}
+
+.contact-form-card {
+  padding: 1.5rem;
+  border: 1px solid rgba(31, 41, 51, 0.1);
+  border-radius: 1.25rem;
+  background: #ffffff;
+  box-shadow: 0 20px 55px rgba(31, 41, 51, 0.08);
+}
+
+.contact-form-heading {
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.contact-form select {
+  width: 100%;
+  min-height: 49px;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid #d4dad6;
+  border-radius: 0.65rem;
+  background: #ffffff;
+  color: #1f2933;
+  outline: none;
+}
+
+.contact-form select:focus {
+  border-color: #23352d;
+  box-shadow: 0 0 0 3px rgba(35, 53, 45, 0.13);
+}
+
+.form-error {
+  margin: 0;
+  color: #a12a2a;
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+.form-field input[aria-invalid="true"],
+.form-field textarea[aria-invalid="true"],
+.form-field select[aria-invalid="true"] {
+  border-color: #a12a2a;
+}
+
+.contact-submit-button {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .services-grid,
+  .values-grid,
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-statistics-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .contact-form-card {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .services-introduction {
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .services-cta-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-story-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .contact-layout {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  }
+
+  .contact-information {
+    position: sticky;
+    top: 110px;
+  }
+}
 }
