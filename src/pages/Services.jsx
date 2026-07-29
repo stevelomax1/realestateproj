@@ -151,11 +151,11 @@ function Services() {
             <p>
               Speak with The Realty Group about your buying or selling goals.
             </p>
-          </div>
 
-          <Link className="button button-light" to="/contact">
-            Contact Our Team
-          </Link>
+            <Link className="button button-light" to="/contact">
+              Contact Our Team
+            </Link>
+          </div>
         </div>
       </section>
     </>

@@ -206,6 +206,10 @@ main {
   text-transform: uppercase;
 }
 
+.hero .eyebrow {
+  font-size: 1.50rem;
+}
+
 .site-footer {
   padding-top: 3rem;
   background: #18241f;
@@ -271,7 +275,7 @@ main {
   }
 
   .footer-content {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr;
     align-items: start;
   }
 }
@@ -1021,9 +1025,38 @@ form-success-message {
   background: #eef1ef;
 }
 
+.service-process-section .section-heading {
+  width: 100%;
+  max-width: none;
+  margin: 0 0 3rem;
+  text-align: left;
+}
+
+.service-process-section .section-heading .eyebrow {
+  margin: 0 0 1rem;
+  color: #8d6947;
+  text-align: left;
+}
+
+.service-process-section .section-heading h2 {
+  margin: 0 0 1rem;
+  color: #23352d;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.service-process-section .section-heading > p:last-child {
+  margin: 0;
+  color: #68756e;
+  line-height: 1.85;
+}
+}
+
 .process-grid {
   display: grid;
   gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .process-step {
@@ -1069,6 +1102,10 @@ form-success-message {
 
 .services-cta p:not(.eyebrow) {
   color: #d1d9d5;
+}
+
+.services-cta-content .button {
+  margin-top: 1rem;
 }
 
 .button-light {
@@ -1128,8 +1165,16 @@ form-success-message {
   gap: 1.25rem;
 }
 
+.about-story-content .eyebrow {
+  margin-bottom: -0.6rem;
+}
+
 .values-section {
   background: #eef1ef;
+}
+
+.values-section .section-heading {
+  padding-top: 1.5rem;
 }
 
 .about-statistics-section {
@@ -1499,5 +1544,4 @@ textarea:focus:not(:focus-visible) {
 
 .text-button:hover {
   text-decoration: underline;
-}
 }

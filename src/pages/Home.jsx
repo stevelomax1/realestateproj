@@ -33,7 +33,7 @@ const filteredProperties = featuredProperties.filter((property) =>
 
             <p className="hero-text">
               Whether you're buying your first home or upgrading to your forever
-              home, our experienced agents help you every step of the way.
+              home, our experienced agents help you every step of the way!
             </p>
 
             <div className="hero-buttons">
