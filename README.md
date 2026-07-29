@@ -7,7 +7,7 @@ A modern, responsive real estate website built with **React** and **Vite** to sh
 ## Live Demo
 
 **Live Website:**
-https://your-vercel-url.vercel.app
+https://the-realty-group.vercel.app/
 
 **GitHub Repository:**
 https://github.com/stevelomax1/realestateproj
