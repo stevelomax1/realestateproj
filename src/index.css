@@ -1301,4 +1301,203 @@ form-success-message {
     top: 110px;
   }
 }
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 1000;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  color: #23352d;
+  font-weight: 800;
+  transform: translateY(-150%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+:focus-visible {
+  outline: 3px solid #b6875e;
+  outline-offset: 3px;
+}
+
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.nav-link,
+.button,
+.property-card,
+.service-card,
+.value-card,
+.process-step {
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.service-card:hover,
+.value-card:hover,
+.process-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(31, 41, 51, 0.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+@media (max-width: 849px) {
+  .nav-menu {
+    max-height: calc(100vh - 95px);
+    overflow-y: auto;
+  }
+
+  .nav-menu .button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: min(100% - 1.25rem, 1120px);
+  }
+
+  .hero,
+  .featured,
+  .services-section,
+  .about-story-section,
+  .values-section,
+  .contact-section,
+  .properties-section {
+    padding-block: 3.5rem;
+  }
+
+  .page-hero {
+    padding-block: 4rem;
+  }
+
+  .hero-grid {
+    gap: 2.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .button {
+    width: 100%;
+  }
+
+  .property-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .property-details {
+    gap: 0.75rem;
+  }
+
+  .property-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .filter-panel,
+  .showing-card,
+  .contact-form-card,
+  .service-card,
+  .value-card,
+  .process-step {
+    padding: 1.25rem;
+  }
+
+  .about-image-wrapper img {
+    min-height: 340px;
+  }
+
+  .about-experience-card {
+    right: 0.75rem;
+    bottom: 0.75rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+}
+.not-found-page {
+  display: grid;
+  min-height: 70vh;
+  place-items: center;
+  padding-block: 5rem;
+  background:
+    radial-gradient(circle at top right, rgba(141, 105, 71, 0.14), transparent 35%),
+    #f8f7f4;
+}
+
+.not-found-content {
+  max-width: 750px;
+  text-align: center;
+}
+
+.not-found-number {
+  margin: 0;
+  color: rgba(35, 53, 45, 0.1);
+  font-size: clamp(7rem, 25vw, 14rem);
+  font-weight: 900;
+  line-height: 0.75;
+}
+
+.not-found-content h1 {
+  margin: 0;
+  color: #23352d;
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.not-found-content > p:not(.eyebrow, .not-found-number) {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  color: #68756e;
+  line-height: 1.8;
+}
+
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.not-found-actions .button,
+.text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.text-button {
+  min-height: 48px;
+  padding: 0.75rem 1.2rem;
+  color: #23352d;
+  font-weight: 750;
+}
+
+.text-button:hover {
+  text-decoration: underline;
+}
 }

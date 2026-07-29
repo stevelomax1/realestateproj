@@ -12,10 +12,13 @@ import NotFound from "./pages/NotFound";
 function App() {
   return (
     <BrowserRouter>
+    <a className="skip-link" href="#main-content">
+  Skip to main content
+</a>
       <div className="site-wrapper">
         <Navbar />
 
-        <main>
+        <main id="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/properties" element={<Properties />} />
